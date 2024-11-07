@@ -8,7 +8,6 @@ export default function Home() {
   const handleClick = () => {
     console.log('clicked');
     if (typeof window !== undefined && window.gtag) {
-      window.gtag('set', 'debug_mode', true);
       console.log('ga available');
       window.gtag('event', 'button_click', {
         event_category: 'engagement',
